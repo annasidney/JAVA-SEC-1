@@ -1,0 +1,26 @@
+class Car {
+    String mileage;
+    String horsepower;
+    String brand;
+
+    void display() {
+        System.out.println("Mileage: " + mileage);
+        System.out.println("Horsepower: " + horsepower);
+        System.out.println("Brand: " + brand);
+    }
+
+    public static void main(String[] args) {
+        Car s1 = new Car();
+        s1.mileage = "20 km/l";
+        s1.horsepower = "120 HP";
+        s1.brand = "Hyundai";
+
+        Car s2 = new Car();
+        s2.mileage = "18 km/l";
+        s2.horsepower = "150 HP";
+        s2.brand = "BMW";
+
+        s1.display();
+        s2.display();
+    }
+}
